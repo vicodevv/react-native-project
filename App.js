@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 export default function Signup() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [emailaddress, setemailaddress] = useState('');
 
   const handleSignup = () => {
     // handle sign-up logic here
@@ -17,16 +15,9 @@ export default function Signup() {
       <Text style={styles.subtitle}>Kindly key in your details to create an account</Text>
       <TextInput
         style={styles.input}
-        placeholder="Username"
-        value={username}
-        onChangeText={setUsername}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
+        placeholder="What's your email address?"
+        value={emailaddress}
+        onChangeText={setemailaddress}
       />
       <Button title="Sign Up" onPress={handleSignup} />
     </View>
@@ -43,20 +34,22 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    marginBottom: 20,
+    marginBottom: 10,
     color: '#fff',
   },
   subtitle: {
     fontSize: 16,
-    marginBottom: 20,
+    marginBottom: 150,
     color: '#fff',
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ccc',
     borderRadius: 5,
     padding: 10,
-    marginBottom: 10,
+    marginBottom: 100,
     width: '100%',
+    height: 70,
+    backgroundColor: '#262626',
+    color: '#fff',
   },
 });
