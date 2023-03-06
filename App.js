@@ -39,14 +39,14 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    marginBottom: 150,
+    marginBottom: 100,
     color: '#fff',
   },
   input: {
     borderWidth: 1,
     borderRadius: 5,
     padding: 10,
-    marginBottom: 100,
+    marginBottom: 200,
     width: '100%',
     height: 70,
     backgroundColor: '#262626',
