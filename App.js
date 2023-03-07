@@ -6,7 +6,7 @@ export default function Signup() {
 
   const handleSignup = () => {
     // handle sign-up logic here
-    console.log('Signing up...');
+    console.log('Signing up!');
   }
 
   return (
